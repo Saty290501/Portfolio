@@ -1,4 +1,4 @@
-# Riya Jagtap - Portfolio
+# Satye  - Portfolio
 
 This is a modern, clean, and unique portfolio website built with Next.js App Router, Tailwind CSS, and Framer Motion. 
 It features a premium dark theme (`#0f0f14`), elegant typography, and smooth, subtle scroll animations.
