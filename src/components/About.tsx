@@ -13,21 +13,19 @@ export default function About() {
                     transition={{ duration: 0.6 }}
                     className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-24 items-center"
                 >
-                    {/* Left Side: Bold Statement */}
                     <div className="relative z-10">
                         <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight leading-tight text-white/90">
-                            “I turn <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-blue-500">logic</span> into scalable <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500">AI systems.</span>”
+                            From <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-blue-500">data</span> to intelligent <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500">systems.</span>
                         </h2>
                         <div className="absolute -inset-4 bg-gradient-to-r from-purple-500/10 to-blue-500/10 blur-2xl -z-10 rounded-full w-full h-full opacity-50" />
                     </div>
 
-                    {/* Right Side: Description */}
                     <div className="space-y-6 text-gray-400 text-lg leading-relaxed">
                         <p>
-                            My focus lies at the intersection of robust software engineering and emerging artificial intelligence. I build high-performance backend systems, optimize data pipelines, and develop GenAI-driven applications that solve complex problems at scale.
+                            I&apos;m Satyen, a software engineer focused on machine learning, deep learning, and Generative AI. My professional background includes supporting enterprise banking systems at Oracle, where I worked with production workflows, SQL, logs, scripts, and service integrations.
                         </p>
                         <p>
-                            With a solid foundation in Data Structures and Algorithms, I approach architecture with a mindset of efficiency and sustainability. Whether I am deploying microservices, configuring cloud infrastructures, or implementing intelligent reasoning models, my goal is always to deliver clean, maintainable, and highly effective solutions.
+                            I bring that engineering mindset into AI: understand the fundamentals, build reproducible experiments, evaluate results, and make systems useful beyond a demo. My current work includes a local hybrid-retrieval RAG assistant and NN2LLM, a first-principles learning project covering neural networks and language models.
                         </p>
                     </div>
                 </motion.div>
