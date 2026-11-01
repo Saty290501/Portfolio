@@ -4,8 +4,7 @@ import { motion } from 'framer-motion';
 
 const experience = [
     {
-        company: "Oracle Financial Services",
-        location: "Pune, India",
+        company: "Oracle Financial Services Software (OFSS)",
         role: "Technical Analyst — Oracle Banking Support",
         period: "Approximately 3 years",
         points: [
