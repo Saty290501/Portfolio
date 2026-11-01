@@ -1,45 +1,35 @@
-# Satye  - Portfolio
+# Satyen Chaudhari — Machine Learning Engineer Portfolio
 
-This is a modern, clean, and unique portfolio website built with Next.js App Router, Tailwind CSS, and Framer Motion. 
-It features a premium dark theme (`#0f0f14`), elegant typography, and smooth, subtle scroll animations.
+A personal portfolio highlighting my software engineering background, machine learning projects, deep-learning fundamentals, and Generative AI work.
 
-## Technologies Used
-- Next.js 14+ (App Router)
-- React 18+
-- Tailwind CSS (Premium Dark theme config)
-- Framer Motion (Scroll animations, glowing elements)
-- Lucide React (Icons, optional)
+## Built with
+
+- Next.js 14 and React 18
 - TypeScript
+- Tailwind CSS
+- Framer Motion
 
-## Local Setup Instructions
+## Run locally
 
-Prerequisites: You need to have `Node.js` (v18.17 or later) installed on your machine.
+Prerequisites: Node.js 18.17 or later.
 
-1. **Open a terminal in the project directory.**
-   Wait until you are inside the folder `f:\Portfolio Website`
+1. Clone this repository.
+2. Install dependencies with `npm install`.
+3. Start the development server with `npm run dev`.
+4. Open http://localhost:3000.
 
-2. **Install all dependencies:**
-   ```bash
-   npm install
-   ```
+## Main sections
 
-3. **Start the development server:**
-   ```bash
-   npm run dev
-   ```
+- About: engineering background and current ML focus
+- Skills: ML, deep learning, GenAI, backend, cloud, and data tooling
+- Experience & Projects: Oracle Banking support experience and selected AI/ML projects
+- Education and selected credentials
+- Contact: GitHub profile
 
-4. **View the application:**
-   Open [http://localhost:3000](http://localhost:3000) in your browser.
-   To see the changes during development, the server will auto-refresh upon file saves.
+## Featured repository
 
-## Project Structure Overview
+[NN2LLM — Neural Networks to Large Language Models](https://github.com/Saty290501/NN2LLM)
 
-- `src/app/layout.tsx`: Root document containing the Inter font settings and persistent `Navbar`.
-- `src/app/page.tsx`: Main aggregator bringing together all the portfolio sections.
-- `src/app/globals.css`: Contains custom CSS scrollbar, smooth scroll behavior, and Tailwind injections.
-- `src/components/*`: Extracted sections (Hero, About, Skills, WorkExperience, Education, Certifications, Contact, ScrollProgress, Navbar).
+## Note
 
-## Customization
-
-- To adjust colors, review `tailwind.config.ts`. The custom palette uses `#0f0f14` for background and gradients from purple to blue.
-- Content changes can be made directly in the respective components inside `src/components/`.
+Project write-ups describe the work currently represented in my repositories and learning notes. I am continuing to add reproducible implementations, tests, and technical documentation.

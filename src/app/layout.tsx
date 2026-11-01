@@ -6,8 +6,8 @@ import Navbar from '@/components/Navbar';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-    title: 'Riya Jagtap | Software Engineer',
-    description: 'Software Engineer with experience in backend and cloud-native system development.',
+    title: 'Satyen Chaudhari | Machine Learning Engineer',
+    description: 'Machine Learning Engineer focused on applied machine learning, deep learning, and Generative AI.',
 };
 
 export default function RootLayout({

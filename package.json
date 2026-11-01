@@ -1,6 +1,6 @@
 {
-  "name": "riya-portfolio",
-  "version": "0.1.0",
+  "name": "satyen-ml-engineer-portfolio",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
