@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 const education = [
     {
         institution: "Vishwakarma Institute of Technology, Pune",
-        university: "Savitribai Phule Pune University",
+        university: "",
         degree: "B.Tech in Electronics & Telecommunication Engineering",
         date: "2019 – 2023",
         score: "CGPA: 8.39"
