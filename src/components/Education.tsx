@@ -6,16 +6,9 @@ const education = [
     {
         institution: "Vishwakarma Institute of Technology, Pune",
         university: "Savitribai Phule Pune University",
-        degree: "B.Tech in Computer Engineering",
-        date: "May 2023",
-        score: "CGPA: 9.13"
-    },
-    {
-        institution: "K.K. Wagh Polytechnic, Nashik",
-        university: "",
-        degree: "Diploma in Computer Technology",
-        date: "Jul 2020",
-        score: "Percentage: 95.26"
+        degree: "B.Tech in Electronics & Telecommunication Engineering",
+        date: "2019 – 2023",
+        score: "CGPA: 8.39"
     }
 ];
 
@@ -53,12 +46,10 @@ export default function Education() {
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222" />
                                 </svg>
                             </div>
-
                             <div className="text-sm font-mono text-purple-400 mb-2">{edu.date}</div>
                             <h3 className="text-xl font-bold text-white/90 mb-1">{edu.degree}</h3>
                             <div className="text-base text-gray-300 font-medium mb-1">{edu.institution}</div>
-                            {edu.university && <div className="text-sm text-gray-500 mb-4">{edu.university}</div>}
-
+                            <div className="text-sm text-gray-500 mb-4">{edu.university}</div>
                             <div className="mt-4 inline-flex items-center px-3 py-1 rounded-full bg-blue-500/10 text-blue-400 text-sm font-medium border border-blue-500/20">
                                 {edu.score}
                             </div>
