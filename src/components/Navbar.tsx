@@ -9,14 +9,7 @@ export default function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
 
     useEffect(() => {
-        const handleScroll = () => {
-            if (window.scrollY > 50) {
-                setIsScrolled(true);
-            } else {
-                setIsScrolled(false);
-            }
-        };
-
+        const handleScroll = () => setIsScrolled(window.scrollY > 50);
         window.addEventListener('scroll', handleScroll);
         return () => window.removeEventListener('scroll', handleScroll);
     }, []);
@@ -24,7 +17,9 @@ export default function Navbar() {
     const links = [
         { name: 'Home', href: '#home' },
         { name: 'About', href: '#about' },
+        { name: 'Skills', href: '#skills' },
         { name: 'Work', href: '#work' },
+        { name: 'Education', href: '#education' },
         { name: 'Contact', href: '#contact' },
     ];
 
@@ -33,17 +28,17 @@ export default function Navbar() {
             initial={{ y: -100 }}
             animate={{ y: 0 }}
             transition={{ duration: 0.5 }}
-            className={`fixed top-0 w-full z-40 transition-all duration-300 ${isScrolled
+            className={`fixed top-0 w-full z-40 transition-all duration-300 ${
+                isScrolled
                     ? 'bg-[#0f0f14]/80 backdrop-blur-md shadow-lg py-4 border-b border-white/5'
                     : 'bg-transparent py-6'
-                }`}
+            }`}
         >
             <div className="max-w-7xl mx-auto px-6 lg:px-12 flex justify-between items-center">
                 <Link href="#home" className="text-xl font-bold tracking-tighter hover:text-purple-400 transition-colors">
-                    RJ<span className="text-blue-500">.</span>
+                    SC<span className="text-blue-500">.</span>
                 </Link>
 
-                {/* Desktop Menu */}
                 <div className="hidden md:flex gap-8 items-center">
                     {links.map((link) => (
                         <Link
@@ -57,8 +52,9 @@ export default function Navbar() {
                     ))}
                 </div>
 
-                {/* Mobile Menu Button */}
                 <button
+                    aria-label={isOpen ? "Close navigation menu" : "Open navigation menu"}
+                    aria-expanded={isOpen}
                     className="md:hidden text-gray-300 hover:text-white"
                     onClick={() => setIsOpen(!isOpen)}
                 >
@@ -72,7 +68,6 @@ export default function Navbar() {
                 </button>
             </div>
 
-            {/* Mobile Menu */}
             {isOpen && (
                 <motion.div
                     initial={{ opacity: 0, y: -20 }}
